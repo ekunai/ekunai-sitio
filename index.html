@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EKUNAI Rector · del Círculo de Rectores</title>
+<meta name="description" content="EKUNAI Rector es el asistente de inteligencia artificial del Círculo de Rectores para el trabajo diario del rector en colegios oficiales y privados de Colombia.">
+<meta property="og:title" content="EKUNAI Rector · del Círculo de Rectores">
+<meta property="og:description" content="Más tiempo. Menos soledad. Con la norma de su lado.">
+<meta property="og:type" content="website">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Josefin+Sans:wght@600;700&display=swap">
+<style>
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:"DM Sans",system-ui,sans-serif;background:#F7F2E8;color:#1E2A44;}
+  h1,h2,h3{font-family:"Josefin Sans","DM Sans",system-ui,sans-serif;margin:0;}
+  a{color:#9C5A24;text-decoration:none;}
+  a:hover{color:#B7862F;}
+  .container{max-width:1120px;margin:0 auto;padding-inline:clamp(20px,5vw,64px);}
+  .btn-primary{display:inline-flex;align-items:center;justify-content:center;background:#B7862F;color:#F7F2E8;font-weight:700;font-size:16px;padding:14px 28px;border-radius:10px;border:none;cursor:pointer;white-space:nowrap;}
+  .btn-primary:hover{background:#9C5A24;color:#F7F2E8;}
+  .btn-ghost{display:inline-flex;align-items:center;justify-content:center;background:transparent;color:#1E2A44;font-weight:700;font-size:16px;padding:14px 20px;border-radius:10px;border:1.5px solid #1E2A44;cursor:pointer;white-space:nowrap;font-family:inherit;}
+  .btn-ghost:hover{background:#1E2A44;color:#F7F2E8;}
+  .card{background:#FFFFFF;border:1px solid #E0D4BB;border-radius:16px;padding:28px;}
+  .eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#B7862F;font-weight:700;margin:0;}
+  .grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;}
+  .grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;}
+  .row-wrap{display:flex;flex-wrap:wrap;align-items:center;gap:16px;}
+  .step{display:flex;gap:16px;}
+  .num{width:36px;height:36px;border-radius:50%;background:#1E2A44;color:#F7F2E8;display:flex;align-items:center;justify-content:center;font-weight:700;flex:none;}
+  .step h3{font-size:18px;color:#1E2A44;}
+  .step p,.card p.t{font-size:15px;line-height:1.6;color:#6A6150;margin:6px 0 0;}
+  nav a{font-size:15px;font-weight:500;color:#1E2A44;}
+  [hidden]{display:none!important}
+  @media (max-width:800px){
+    .grid-3,.grid-2{grid-template-columns:1fr;}
+    nav .hide-sm{display:none;}
+  }
+</style>
+</head>
+<body>
+
+<header style="border-bottom:1px solid #E0D4BB;background:#F7F2E8;">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:18px;">
+    <a href="#" style="display:flex;flex-direction:column;align-items:center;gap:2px;color:#1E2A44;">
+      <svg width="30" height="26" viewBox="0 18 110 96" aria-hidden="true">
+        <circle cx="60" cy="54" r="2.2" fill="#1E2A44"/><circle cx="67.64" cy="53.81" r="2.72" fill="#B7862F"/><circle cx="73.37" cy="62.84" r="3.23" fill="#1E2A44"/><circle cx="67.94" cy="75.59" r="3.75" fill="#B7862F"/><circle cx="51.32" cy="79.49" r="4.27" fill="#1E2A44"/><circle cx="35.69" cy="66.51" r="4.78" fill="#B7862F"/><circle cx="36.54" cy="42.95" r="5.3" fill="#1E2A44"/><circle cx="58.28" cy="27.21" r="5.82" fill="#B7862F"/><circle cx="87.25" cy="35.47" r="6.33" fill="#1E2A44"/><circle cx="100" cy="66.34" r="6.85" fill="#B7862F"/><circle cx="82.17" cy="98.39" r="7.37" fill="#1E2A44"/><circle cx="42.74" cy="104.97" r="7.88" fill="#B7862F"/><circle cx="10.55" cy="76.07" r="8.4" fill="#1E2A44"/>
+      </svg>
+      <span style="font-family:'Josefin Sans',sans-serif;font-weight:700;font-size:16px;line-height:1;">EKUNAI <span style="color:#B7862F;">Rector</span></span>
+    </a>
+    <nav style="display:flex;align-items:center;gap:24px;flex-wrap:wrap;">
+      <a href="#como-funciona" class="hide-sm">Cómo funciona</a>
+      <a href="#que-incluye" class="hide-sm">Qué incluye</a>
+      <a href="#circulo" class="hide-sm">Círculo de Rectores</a>
+      <a href="#lista-de-espera" class="btn-primary" style="padding:10px 20px;font-size:14px;">Lista de espera</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section style="padding-block:clamp(56px,8vw,96px);">
+    <div class="container" style="max-width:780px;">
+      <p class="eyebrow" style="margin-bottom:14px;">EKUNAI Rector · del Círculo de Rectores</p>
+      <h1 style="font-size:clamp(34px,5vw,52px);line-height:1.08;">La inteligencia artificial que acompaña la rectoría, no que la reemplaza.</h1>
+      <p style="font-size:clamp(18px,2vw,21px);font-weight:700;color:#9C5A24;margin-top:20px;">Más tiempo. Menos soledad. Con la norma de su lado.</p>
+      <p style="font-size:17px;line-height:1.7;color:#2B2117;margin-top:16px;max-width:60ch;">EKUNAI Rector es el asistente de inteligencia artificial del Círculo de Rectores para el trabajo diario del rector, en colegios oficiales y privados de Colombia. Funciona dentro de Claude. El rector pide lo que necesita con sus propias palabras y EKUNAI Rector escoge la herramienta que resuelve esa tarea.</p>
+      <p style="font-size:17px;line-height:1.7;color:#2B2117;margin-top:12px;max-width:60ch;">Conoce el colegio porque tiene su Ficha institucional, y entrega borradores listos para revisar: actas, oficios, presupuestos, planes y tableros en Word o Excel, con la norma colombiana al día.</p>
+      <p style="font-size:17px;line-height:1.7;color:#2B2117;margin-top:12px;max-width:60ch;">Su regla es la de siempre: la IA redacta y calcula, y el rector revisa, decide y firma.</p>
+      <div class="row-wrap" style="margin-top:32px;">
+        <a href="#lista-de-espera" class="btn-primary">Unirme a la lista de espera</a>
+        <a href="#como-funciona" class="btn-ghost">Ver cómo funciona</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-block:48px;background:#FFFFFF;border-top:1px solid #E0D4BB;border-bottom:1px solid #E0D4BB;">
+    <div class="container">
+      <h2 style="font-size:clamp(24px,3vw,30px);max-width:36ch;">Lo que ya conoce de dirigir un colegio</h2>
+      <div class="grid-3" style="margin-top:32px;">
+        <div class="card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#B7862F" stroke-width="1.8" aria-hidden="true"><path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z"/><path d="M15 2v5h5"/><path d="M8 13h8M8 17h5"/></svg>
+          <h3 style="font-size:19px;margin-top:16px;">El papeleo no da tregua</h3>
+          <p class="t">Entre informes, PEI, PMI y una norma que cambia casi cada mes, administrar se come el tiempo que debería ir a la institución.</p>
+        </div>
+        <div class="card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#B7862F" stroke-width="1.8" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-4 3-6 7-6s7 2 7 6"/></svg>
+          <h3 style="font-size:19px;margin-top:16px;">Decidir en soledad</h3>
+          <p class="t">Las decisiones más difíciles casi siempre se toman sin alguien con quien conversarlas antes.</p>
+        </div>
+        <div class="card">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#B7862F" stroke-width="1.8" aria-hidden="true"><path d="M12 9v4"/><path d="M12 17h.01"/><path d="M10.3 3.9 2.5 18a1.8 1.8 0 0 0 1.6 2.7h15.8a1.8 1.8 0 0 0 1.6-2.7L13.7 3.9a1.7 1.7 0 0 0-3.4 0Z"/></svg>
+          <h3 style="font-size:19px;margin-top:16px;">El miedo a fallar en lo normativo</h3>
+          <p class="t">Un paso mal dado en lo normativo puede costar caro, y no siempre hay tiempo de verificarlo todo a mano.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="como-funciona" style="padding-block:clamp(56px,7vw,80px);">
+    <div class="container">
+      <p class="eyebrow">Cómo funciona</p>
+      <h2 style="font-size:clamp(26px,3.5vw,34px);margin-top:10px;max-width:36ch;">De conocer la oferta a trabajar con sus propios datos</h2>
+      <div class="grid-2" style="margin-top:36px;gap:28px 40px;">
+        <div class="step"><div class="num">1</div><div><h3>Conozca la oferta</h3><p>Revise qué trae EKUNAI Rector y cómo puede ayudar a su institución.</p></div></div>
+        <div class="step"><div class="num">2</div><div><h3>Únase a la lista de espera</h3><p>Deje sus datos y sea de los primeros en inscribir a su institución cuando abra la venta.</p></div></div>
+        <div class="step"><div class="num">3</div><div><h3>Instálelo en su propia cuenta</h3><p>EKUNAI Rector corre en su propia cuenta, con los datos de su institución. Nunca en un servidor externo que los lea por usted.</p></div></div>
+        <div class="step"><div class="num">4</div><div><h3>Trabaje acompañado</h3><p>Use las misiones guiadas, el portal y el Círculo de Rectores para no caminar solo el año escolar.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="que-incluye" style="padding-block:clamp(56px,7vw,80px);background:#1E2A44;">
+    <div class="container">
+      <p class="eyebrow" style="color:#D9A84A;">Qué incluye</p>
+      <h2 style="font-size:clamp(26px,3.5vw,34px);color:#F7F2E8;margin-top:10px;max-width:40ch;">EKUNAI Rector, para su cuenta de Claude</h2>
+      <div style="margin-top:32px;background:#F7F2E8;border-radius:20px;padding:clamp(24px,4vw,40px);position:relative;">
+        <span style="position:absolute;top:-14px;right:24px;background:#B7862F;color:#F7F2E8;font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:6px 14px;border-radius:999px;box-shadow:0 2px 6px rgba(30,42,68,.25);">Próximamente</span>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:18px;max-width:560px;">
+          <li style="display:flex;gap:12px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9C5A24" stroke-width="2" aria-hidden="true" style="flex:none;margin-top:2px;"><path d="M5 12l4 4 10-10"/></svg><span style="font-size:16px;color:#2B2117;">Un asistente con decenas de habilidades para la gestión académica, de convivencia, administrativa y de talento humano.</span></li>
+          <li style="display:flex;gap:12px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9C5A24" stroke-width="2" aria-hidden="true" style="flex:none;margin-top:2px;"><path d="M5 12l4 4 10-10"/></svg><span style="font-size:16px;color:#2B2117;">13 misiones que lo llevan paso a paso por los procesos del año: inicio de año, cierre de periodo, evaluación docente, presupuesto, PEI y más.</span></li>
+          <li style="display:flex;gap:12px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#9C5A24" stroke-width="2" aria-hidden="true" style="flex:none;margin-top:2px;"><path d="M5 12l4 4 10-10"/></svg><span style="font-size:16px;color:#2B2117;">Un portal propio con el semáforo de sus pendientes y la agenda de los próximos 45 días.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="circulo" style="padding-block:clamp(56px,7vw,80px);">
+    <div class="container" style="max-width:720px;">
+      <p class="eyebrow">Círculo de Rectores</p>
+      <h2 style="font-size:clamp(26px,3.5vw,32px);margin-top:10px;">No hace falta tener EKUNAI Rector para entrar al Círculo</h2>
+      <p style="font-size:17px;font-weight:700;color:#9C5A24;margin-top:16px;">Lo humano primero, la inteligencia siempre.</p>
+      <p style="font-size:16px;line-height:1.7;color:#2B2117;margin-top:10px;">Un círculo de pares que sí saben lo que vive. Comunidad virtual para rectores de básica secundaria, media y media técnica, construida con ustedes y para ustedes.</p>
+      <div class="card" id="circulo-mas" style="margin-top:20px;" hidden>
+        <h3 style="font-size:17px;">Qué encontrará aquí</h3>
+        <ul style="list-style:none;margin:16px 0 0;padding:0;display:flex;flex-direction:column;gap:14px;">
+          <li style="display:flex;gap:10px;font-size:15px;line-height:1.6;color:#2B2117;"><span aria-hidden="true">🤝</span><span><strong>Comunidad:</strong> espacios para compartir herramientas, aprendizajes, triunfos y oportunidades, y cada quince días por Google Meet, <em>El Círculo de la Palabra</em>, para conversar sobre casos reales y aprender de otros rectores.</span></li>
+          <li style="display:flex;gap:10px;font-size:15px;line-height:1.6;color:#2B2117;"><span aria-hidden="true">🤖</span><span><strong>IA:</strong> herramientas y prompts prácticos para ahorrar tiempo en las tareas del rector.</span></li>
+          <li style="display:flex;gap:10px;font-size:15px;line-height:1.6;color:#2B2117;"><span aria-hidden="true">🌱</span><span><strong>Crecimiento personal:</strong> cursos y meditaciones para su bienestar.</span></li>
+          <li style="display:flex;gap:10px;font-size:15px;line-height:1.6;color:#2B2117;"><span aria-hidden="true">📡</span><span><strong>Radar Normativo:</strong> cada mes, qué cambió en la norma y qué le toca hacer.</span></li>
+        </ul>
+        <p style="font-size:15px;line-height:1.7;color:#2B2117;margin-top:18px;">Si usted tiene algo que aprender o algo que enseñar, en el Círculo de Rectores debe estar.</p>
+        <p style="font-size:16px;font-weight:700;color:#9C5A24;margin-top:14px;">Más tiempo. Menos soledad. Con la norma de su lado.</p>
+      </div>
+      <div style="margin-top:24px;">
+        <button type="button" class="btn-ghost" id="btn-circulo" aria-expanded="false" aria-controls="circulo-mas">Conocer el Círculo de Rectores</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="lista-de-espera" style="padding-block:clamp(56px,7vw,80px);background:#FFFFFF;border-top:1px solid #E0D4BB;">
+    <div class="container" style="max-width:560px;text-align:center;">
+      <p class="eyebrow">Lista de espera</p>
+      <h2 style="font-size:clamp(24px,3vw,30px);margin-top:10px;">Avísenme cuando esté disponible</h2>
+      <p style="font-size:15px;line-height:1.6;color:#6A6150;margin-top:12px;">El precio de EKUNAI Rector todavía se está definiendo. Deje sus datos en el formulario y le escribimos apenas abra la inscripción.</p>
+      <div style="margin-top:28px;">
+        <a href="https://forms.gle/yaaPmiaPyaHEMcxG9" target="_blank" rel="noopener" class="btn-primary" style="width:100%;box-sizing:border-box;">Unirme a la lista de espera</a>
+      </div>
+      <p style="font-size:13px;color:#6A6150;margin-top:14px;">Se abre en una pestaña nueva, en Google Forms.</p>
+    </div>
+  </section>
+</main>
+
+<footer style="padding-block:32px;background:#1E2A44;">
+  <div class="container" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;">
+    <p style="font-size:14px;color:#D9A84A;margin:0;">EKUNAI Rector · del Círculo de Rectores</p>
+    <div style="display:flex;gap:20px;">
+      <a href="#circulo" style="font-size:14px;color:#F7F2E8;">Círculo de Rectores</a>
+      <a href="mailto:papajosemental@gmail.com" style="font-size:14px;color:#F7F2E8;">Contacto</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const b=document.getElementById('btn-circulo'), m=document.getElementById('circulo-mas');
+  b.addEventListener('click',()=>{const abrir=m.hidden;m.hidden=!abrir;b.setAttribute('aria-expanded',String(abrir));b.textContent=abrir?'Ver menos':'Conocer el Círculo de Rectores';});
+</script>
+</body>
+</html>
