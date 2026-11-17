@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Instalación · EKUNAI Rector</title>
+<meta name="description" content="Cómo instalar EKUNAI Rector en su propia cuenta y montar la ficha de Mi Colegio.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Josefin+Sans:wght@600;700&display=swap">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header style="border-bottom:1px solid #E0D4BB;background:#F7F2E8;">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:18px;">
+    <a href="index.html" style="display:flex;flex-direction:column;align-items:center;gap:2px;color:#1E2A44;">
+      <svg width="30" height="26" viewBox="0 18 110 96" aria-hidden="true"><circle cx="60" cy="54" r="2.2" fill="#1E2A44"/><circle cx="67.64" cy="53.81" r="2.72" fill="#B7862F"/><circle cx="73.37" cy="62.84" r="3.23" fill="#1E2A44"/><circle cx="67.94" cy="75.59" r="3.75" fill="#B7862F"/><circle cx="51.32" cy="79.49" r="4.27" fill="#1E2A44"/><circle cx="35.69" cy="66.51" r="4.78" fill="#B7862F"/><circle cx="36.54" cy="42.95" r="5.3" fill="#1E2A44"/><circle cx="58.28" cy="27.21" r="5.82" fill="#B7862F"/><circle cx="87.25" cy="35.47" r="6.33" fill="#1E2A44"/><circle cx="100" cy="66.34" r="6.85" fill="#B7862F"/><circle cx="82.17" cy="98.39" r="7.37" fill="#1E2A44"/><circle cx="42.74" cy="104.97" r="7.88" fill="#B7862F"/><circle cx="10.55" cy="76.07" r="8.4" fill="#1E2A44"/></svg>
+      <span style="font-family:'Josefin Sans',sans-serif;font-weight:700;font-size:16px;line-height:1;">EKUNAI <span style="color:#B7862F;">Rector</span></span>
+    </a>
+    <nav style="display:flex;align-items:center;gap:24px;flex-wrap:wrap;">
+      <a href="index.html" class="hide-sm">Inicio</a><a href="kits.html" class="hide-sm">Kits</a><a href="instalar.html" class="hide-sm activo">Instalación</a><a href="actualizaciones.html" class="hide-sm">Actualizaciones y soporte</a>
+      <a href="comprar.html" class="btn-primary" style="padding:10px 20px;font-size:14px;">Solicitar licencia</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="sec"><div class="container narrow">
+  <p class="eyebrow">Instalación</p>
+  <h1 class="h1">Instale EKUNAI Rector en su propia cuenta</h1>
+  <p class="lead">EKUNAI Rector corre en su cuenta de Claude (o de Google, ChatGPT o Copilot), con los datos de su institución, y ningún servidor de EKUNAI los recibe. Esta guía es el resumen; cada kit trae su guía completa en PDF.</p>
+  <div class="aviso info" style="margin-top:20px;">¿Prefiere hacerlo acompañado? Toda licencia incluye una sesión de instalación en grupo. Escríbanos y le damos la fecha de la próxima.</div>
+</div></section>
+
+<section class="sec sec-blanca" id="claude"><div class="container narrow">
+  <p class="eyebrow">Kit Completo · Claude</p>
+  <h2 class="h2">Cinco pasos, una tarde</h2>
+  <div class="step" style="margin-top:24px;"><div class="num">1</div><div><h3>Revise la cuenta</h3><p>Claude de pago (por ejemplo, el plan Pro), con la ejecución de código activada y la app instalada en el computador de la oficina.</p></div></div>
+  <div class="step" style="margin-top:20px;"><div class="num">2</div><div><h3>Instale el plugin (10 minutos)</h3><p>En Claude: Personalización › Plugins › «+ Agregar» › «Subir plugin» y elija <code>1_ekunai-rector.plugin</code> de la carpeta «EKUNAI Rector Completo». Escriba <b>EKUNAI Rector</b> en un chat nuevo: debe salir la bienvenida con el número de su licencia y el menú.</p></div></div>
+  <div class="step" style="margin-top:20px;"><div class="num">3</div><div><h3>Ensaye con El Roble (opcional, 20 minutos)</h3><p>Monte el Proyecto de demostración con el LEEME de la carpeta «Demo - IE El Roble» y pruebe los pedidos de ejemplo.</p></div></div>
+  <div class="step" style="margin-top:20px;"><div class="num">4</div><div><h3>Monte «Mi Colegio»</h3><p>Cree un Proyecto llamado <b>Mi Colegio</b> y escriba «Armemos la ficha del colegio». El nombre, el código DANE, el municipio, la secretaría y el calendario ya vienen de su licencia: usted los confirma y completa sedes, jornadas, niveles, gobierno escolar y lo demás. Suba ahí el PEI, el Manual de Convivencia y el SIEE.</p></div></div>
+  <div class="step" style="margin-top:20px;"><div class="num">5</div><div><h3>Publique su portal (10 minutos)</h3><p>Adjunte <code>2_Portal_EKUNAI_Rector_plantilla.html</code> en un chat y escriba «Publica este archivo como un artefacto con las capacidades db, user y sample». Luego, en el chat de «Mi Colegio»: «Guarda el enlace de mi portal en la ficha: [enlace]».</p></div></div>
+</div></section>
+
+<section class="sec" id="otros"><div class="container narrow">
+  <h2 class="h2">Los demás kits</h2>
+  <div class="card" style="margin-top:20px;" id="esencial"><h3 style="font-size:18px;">Esencial · Claude gratuito</h3>
+    <p class="t">En Claude, suba uno por uno los nueve archivos de «Skills para subir» (empiece por <code>ficha-institucional.zip</code>, que trae su código DANE). Después cree el Proyecto «Mi Colegio» y arme la ficha.</p></div>
+  <div class="card" style="margin-top:16px;" id="google"><h3 style="font-size:18px;">Para Google · Gemini y NotebookLM</h3>
+    <p class="t">Siga <code>EKUNAI_Rector_para_Google_Guia_de_instalacion.pdf</code>. Suba el archivo <code>Licencia_EKUNAI_Rector.md</code> junto con su Ficha institucional como fuente de cada asistente.</p></div>
+  <div class="card" style="margin-top:16px;" id="chatgpt"><h3 style="font-size:18px;">Para ChatGPT</h3>
+    <p class="t">Siga <code>EKUNAI_Rector_para_ChatGPT_Guia_de_instalacion.pdf</code>. Suba <code>Licencia_EKUNAI_Rector.md</code> junto con su Ficha institucional en el Proyecto o en el GPT.</p></div>
+  <div class="card" style="margin-top:16px;" id="copilot"><h3 style="font-size:18px;">Para Copilot</h3>
+    <p class="t">Siga <code>EKUNAI_Rector_para_Copilot_Guia_de_instalacion.pdf</code>. Suba <code>Licencia_EKUNAI_Rector.md</code> junto con su Ficha institucional como conocimiento del agente.</p></div>
+</div></section>
+
+<section class="sec sec-blanca" id="problemas"><div class="container narrow">
+  <h2 class="h2">Si algo no sale</h2>
+  <div class="card" style="margin-top:20px;"><h3 style="font-size:18px;">«Esta copia está licenciada para otra institución»</h3>
+    <p class="t">EKUNAI Rector compara el código DANE de su Ficha con el de su licencia. Casi siempre es una de tres cosas: un dígito mal escrito en la ficha (pida «actualiza la ficha» y corríjalo), el código de una sede en lugar del de la sede principal, o que usted cambió de institución. En ese último caso la licencia lo acompaña: escríbanos y le enviamos la copia con el código nuevo.</p></div>
+  <div class="card" style="margin-top:16px;"><h3 style="font-size:18px;">Escribo «EKUNAI Rector» y no pasa nada</h3>
+    <p class="t">Revise que el plugin aparezca activo en Personalización › Plugins y abra un chat nuevo. Si subió una versión nueva, desactive y vuelva a activar el plugin.</p></div>
+  <div class="card" style="margin-top:16px;"><h3 style="font-size:18px;">Instalé una actualización</h3>
+    <p class="t">Cada versión nueva es un <code>ekunai-rector.plugin</code> con su código DANE, que se sube igual que el primero. Su Ficha y sus documentos de «Mi Colegio» no se tocan.</p></div>
+  <p class="txt" style="margin-top:24px;">¿Sigue atascado? Escriba a <a class="js-correo-soporte" href="mailto:papajosemental@gmail.com">papajosemental@gmail.com</a> o pregunte en la reunión semanal de soporte.</p>
+</div></section>
+
+</main>
+<footer style="padding-block:32px;background:#1E2A44;">
+  <div class="container" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;">
+    <p style="font-size:14px;color:#D9A84A;margin:0;">EKUNAI Rector · del Círculo de Rectores · Lo humano primero, la inteligencia siempre.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap;">
+      <a href="kits.html" style="font-size:14px;color:#F7F2E8;">Kits</a>
+      <a href="terminos.html" style="font-size:14px;color:#F7F2E8;">Términos de licencia</a>
+      <a href="actualizaciones.html#soporte" style="font-size:14px;color:#F7F2E8;">Soporte</a>
+      <a href="mailto:papajosemental@gmail.com" class="js-correo-contacto" style="font-size:14px;color:#F7F2E8;">Contacto</a>
+    </div>
+  </div>
+</footer>
+<script src="config.js"></script>
+
+</body>
+</html>

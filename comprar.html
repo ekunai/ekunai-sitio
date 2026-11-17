@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Solicitar licencia · EKUNAI Rector</title>
+<meta name="description" content="Solicite la licencia de EKUNAI Rector para su institución con su código DANE.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Josefin+Sans:wght@600;700&display=swap">
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<header style="border-bottom:1px solid #E0D4BB;background:#F7F2E8;">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:18px;">
+    <a href="index.html" style="display:flex;flex-direction:column;align-items:center;gap:2px;color:#1E2A44;">
+      <svg width="30" height="26" viewBox="0 18 110 96" aria-hidden="true"><circle cx="60" cy="54" r="2.2" fill="#1E2A44"/><circle cx="67.64" cy="53.81" r="2.72" fill="#B7862F"/><circle cx="73.37" cy="62.84" r="3.23" fill="#1E2A44"/><circle cx="67.94" cy="75.59" r="3.75" fill="#B7862F"/><circle cx="51.32" cy="79.49" r="4.27" fill="#1E2A44"/><circle cx="35.69" cy="66.51" r="4.78" fill="#B7862F"/><circle cx="36.54" cy="42.95" r="5.3" fill="#1E2A44"/><circle cx="58.28" cy="27.21" r="5.82" fill="#B7862F"/><circle cx="87.25" cy="35.47" r="6.33" fill="#1E2A44"/><circle cx="100" cy="66.34" r="6.85" fill="#B7862F"/><circle cx="82.17" cy="98.39" r="7.37" fill="#1E2A44"/><circle cx="42.74" cy="104.97" r="7.88" fill="#B7862F"/><circle cx="10.55" cy="76.07" r="8.4" fill="#1E2A44"/></svg>
+      <span style="font-family:'Josefin Sans',sans-serif;font-weight:700;font-size:16px;line-height:1;">EKUNAI <span style="color:#B7862F;">Rector</span></span>
+    </a>
+    <nav style="display:flex;align-items:center;gap:24px;flex-wrap:wrap;">
+      <a href="index.html" class="hide-sm">Inicio</a><a href="kits.html" class="hide-sm">Kits</a><a href="instalar.html" class="hide-sm">Instalación</a><a href="actualizaciones.html" class="hide-sm">Actualizaciones y soporte</a>
+      <a href="comprar.html" class="btn-primary" style="padding:10px 20px;font-size:14px;">Solicitar licencia</a>
+    </nav>
+  </div>
+</header>
+<main>
+
+<section class="sec"><div class="container narrow">
+  <p class="eyebrow">Solicitar licencia</p>
+  <h1 class="h1">Su institución, su licencia</h1>
+  <p class="lead">Llene esta solicitud en cinco minutos. Con su código DANE verificamos la institución en el Directorio Único de Establecimientos del Ministerio de Educación, le enviamos el pago o la cotización y, cuando se confirme, le entregamos su EKUNAI Rector con ese código incluido.</p>
+</div></section>
+
+<section class="sec sec-blanca"><div class="container narrow">
+<form id="form-pedido" novalidate>
+
+  <div class="paso-form">
+    <p class="eyebrow">Paso 1 de 4</p>
+    <h2 class="h2">¿Qué herramienta usa hoy?</h2>
+    <p class="muted" style="margin-top:8px;">Es el kit con el que empieza. La licencia incluye los cinco.</p>
+    <div class="opciones"><label class="opcion"><input type="radio" name="kit" value="Completo" checked><span><b>Completo</b><br>Para Claude de pago (Pro o superior)</span></label><label class="opcion"><input type="radio" name="kit" value="Para Google"><span><b>Para Google</b><br>Para Gemini y NotebookLM</span></label><label class="opcion"><input type="radio" name="kit" value="Para ChatGPT"><span><b>Para ChatGPT</b><br>Para quien ya trabaja con ChatGPT</span></label><label class="opcion"><input type="radio" name="kit" value="Para Copilot"><span><b>Para Copilot</b><br>Para Microsoft 365 Copilot</span></label><label class="opcion"><input type="radio" name="kit" value="Esencial"><span><b>Esencial</b><br>Para quien empieza sin pagar una IA</span></label></div>
+  </div>
+
+  <div class="paso-form">
+    <p class="eyebrow">Paso 2 de 4</p>
+    <h2 class="h2">Código DANE de la institución</h2>
+    <p class="muted" style="margin-top:8px;">Son 12 dígitos. Está en el SIMAT y en los certificados del colegio. Use el código del establecimiento (el de la sede principal), no el de una sede.</p>
+    <div class="campo"><label for="dane">Código DANE</label>
+      <input type="text" id="dane" name="dane" inputmode="numeric" maxlength="14" autocomplete="off" placeholder="Ej.: 105318000278"></div>
+    <div id="dane-resultado" aria-live="polite"></div>
+    <div id="manual" hidden>
+      <div class="campo"><label for="nombre_manual">Nombre de la institución</label><input type="text" id="nombre_manual" name="nombre_manual"></div>
+      <div class="campo"><label for="municipio_manual">Municipio y departamento</label><input type="text" id="municipio_manual" name="municipio_manual"></div>
+      <p class="muted">Lo verificamos a mano y le escribimos antes de seguir.</p>
+    </div>
+  </div>
+
+  <div class="paso-form">
+    <p class="eyebrow">Paso 3 de 4</p>
+    <h2 class="h2">Sus datos</h2>
+    <div class="campo"><label for="rector">Nombre completo</label><input type="text" id="rector" name="rector" autocomplete="name" required></div>
+    <div class="campo"><label for="cargo">Cargo</label>
+      <select id="cargo" name="cargo"><option>Rector(a)</option><option>Coordinador(a)</option><option>Otro cargo directivo</option></select></div>
+    <div class="campo"><label for="correo">Correo electrónico</label><input type="email" id="correo" name="correo" autocomplete="email" required></div>
+    <div class="campo"><label for="celular">Celular con WhatsApp</label><input type="tel" id="celular" name="celular" autocomplete="tel" required></div>
+  </div>
+
+  <div class="paso-form">
+    <p class="eyebrow">Paso 4 de 4</p>
+    <h2 class="h2">¿Cómo va a pagar?</h2>
+    <p class="muted js-precio" style="margin-top:8px;">El precio se lo enviamos con la cotización.</p>
+    <div class="opciones" id="opciones-pago">
+      <label class="opcion" id="op-linea" hidden><input type="radio" name="pago" value="Pago en línea"><span><b>Pago en línea</b><br>Tarjeta, PSE o Nequi. Al enviar la solicitud le mostramos el botón de pago.</span></label>
+      <label class="opcion"><input type="radio" name="pago" value="Fondo de Servicios Educativos" checked><span><b>Con el Fondo de Servicios Educativos</b><br>Colegios oficiales. Le enviamos la cotización y los documentos para el proceso de contratación.</span></label>
+      <label class="opcion"><input type="radio" name="pago" value="Transferencia"><span><b>Transferencia bancaria</b><br>Le enviamos los datos de la cuenta y la cuenta de cobro.</span></label>
+    </div>
+    <div class="campo"><label for="notas">¿Algo que debamos saber? (opcional)</label><textarea id="notas" name="notas" rows="3"></textarea></div>
+    <label class="check"><input type="checkbox" id="acepto_terminos" required><span>Leí y acepto los <a href="terminos.html" target="_blank">Términos de licencia de EKUNAI Rector</a>.</span></label>
+    <label class="check"><input type="checkbox" id="acepto_datos" required><span>Autorizo a José Iván Marín Marín (EKUNAI), responsable del tratamiento, a usar estos datos para tramitar mi licencia, la membresía del Círculo de Rectores y el soporte, según la Ley 1581 de 2012. Puedo consultarlos, corregirlos o pedir que se borren escribiendo a <a class="js-correo-soporte" href="mailto:papajosemental@gmail.com">papajosemental@gmail.com</a>.</span></label>
+    <div id="form-error" class="aviso mal" hidden></div>
+    <div style="margin-top:26px;"><button type="submit" class="btn-primary" id="btn-enviar" style="width:100%;">Enviar solicitud</button></div>
+  </div>
+</form>
+
+<div id="confirmacion" hidden>
+  <p class="eyebrow">Solicitud recibida</p>
+  <h2 class="h2">Gracias. Su pedido es el <span id="num-pedido" style="color:#9C5A24;"></span></h2>
+  <div id="pagar-ahora" hidden style="margin-top:20px;"><a id="btn-pagar" class="btn-primary" target="_blank" rel="noopener">Pagar ahora</a>
+    <p class="muted" style="margin-top:8px;">Escriba el número de pedido en la referencia del pago.</p></div>
+  <div class="card" style="margin-top:24px;">
+    <h3 style="font-size:18px;">Qué sigue</h3>
+    <div class="step" style="margin-top:16px;"><div class="num">1</div><div><h3>Verificamos su institución</h3><p>Revisamos el código DANE en el directorio del Ministerio. Si algo no cuadra, le escribimos.</p></div></div>
+    <div class="step" style="margin-top:16px;"><div class="num">2</div><div><h3>Pago o cotización</h3><p>Según la forma de pago que eligió, le llega el enlace, los datos de la cuenta o la cotización para el Fondo.</p></div></div>
+    <div class="step" style="margin-top:16px;"><div class="num">3</div><div><h3>Entrega</h3><p>Con el pago confirmado le enviamos por correo el enlace a su página de entrega: el kit con su código DANE, su licencia y la guía de instalación.</p></div></div>
+    <div class="step" style="margin-top:16px;"><div class="num">4</div><div><h3>Instalación acompañada</h3><p>Lo invitamos a la siguiente sesión de instalación en grupo y al Círculo de Rectores.</p></div></div>
+  </div>
+  <p class="muted" id="msg-correo" style="margin-top:16px;"></p>
+</div>
+</div></section>
+
+</main>
+<footer style="padding-block:32px;background:#1E2A44;">
+  <div class="container" style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;">
+    <p style="font-size:14px;color:#D9A84A;margin:0;">EKUNAI Rector · del Círculo de Rectores · Lo humano primero, la inteligencia siempre.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap;">
+      <a href="kits.html" style="font-size:14px;color:#F7F2E8;">Kits</a>
+      <a href="terminos.html" style="font-size:14px;color:#F7F2E8;">Términos de licencia</a>
+      <a href="actualizaciones.html#soporte" style="font-size:14px;color:#F7F2E8;">Soporte</a>
+      <a href="mailto:papajosemental@gmail.com" class="js-correo-contacto" style="font-size:14px;color:#F7F2E8;">Contacto</a>
+    </div>
+  </div>
+</footer>
+<script src="config.js"></script>
+<script>
+(function(){
+  const $ = s => document.querySelector(s);
+  let DUE = null, cargando = null, encontrado = null;
+  if (EKUNAI.enlacePago) { $('#op-linea').hidden = false; }
+
+  function cargarDUE(){
+    if (!cargando) cargando = fetch('data/due.json').then(r => r.json()).then(j => {
+      DUE = new Map(); j.filas.forEach(f => DUE.set(f[0], f)); return DUE; });
+    return cargando;
+  }
+  const PRIMER = {"1":"oficial urbano","2":"oficial rural","3":"no oficial urbano","4":"no oficial rural"};
+  function esc(t){ return String(t).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+
+  async function revisar(){
+    const v = $('#dane').value.replace(/\D/g,'');
+    const out = $('#dane-resultado'); encontrado = null; $('#manual').hidden = true;
+    if (v.length < 12){ const f = 12 - v.length; out.innerHTML = v.length ? '<p class="muted" style="margin-top:8px;">' + (f === 1 ? 'Falta 1 dígito.' : 'Faltan ' + f + ' dígitos.') + '</p>' : ''; return; }
+    if (v.length > 12){ out.innerHTML = '<div class="aviso mal">El código DANE tiene 12 dígitos y este tiene ' + v.length + '.</div>'; return; }
+    if (!PRIMER[v[0]]){ out.innerHTML = '<div class="aviso mal">Un código de establecimiento empieza por 1, 2, 3 o 4. Revise el número.</div>'; return; }
+    out.innerHTML = '<p class="muted" style="margin-top:8px;">Buscando en el directorio del Ministerio…</p>';
+    try { await cargarDUE(); } catch(e) {
+      out.innerHTML = '<div class="aviso info">No pudimos consultar el directorio en este momento. Siga con la solicitud: lo verificamos nosotros.</div>';
+      encontrado = {dane: v, verificado: false}; return; }
+    const f = DUE.get(v);
+    if (f){
+      encontrado = {dane:f[0], nombre:f[1], municipio:f[2], departamento:f[3], secretaria:f[4], sector:f[5], calendario:f[6], verificado:true};
+      out.innerHTML = '<div class="aviso ok"><b>Encontramos su institución.</b><dl class="ficha-due">'
+        + '<dt>Institución</dt><dd>' + esc(f[1]) + '</dd><dt>Municipio</dt><dd>' + esc(f[2]) + ' (' + esc(f[3]) + ')</dd>'
+        + '<dt>Secretaría</dt><dd>' + esc(f[4]) + '</dd><dt>Sector</dt><dd>' + esc(f[5]) + '</dd><dt>Calendario</dt><dd>' + esc(f[6]) + '</dd></dl>'
+        + '<label class="check"><input type="checkbox" id="confirma_ie" checked><span>Sí, es mi institución.</span></label></div>';
+    } else {
+      const mun = v.substring(1,6); let n = 0, nom = '';
+      DUE.forEach(r => { if (r[0].substring(1,6) === mun){ n++; nom = r[2] + ' (' + r[3] + ')'; } });
+      out.innerHTML = '<div class="aviso mal"><b>Ese código no aparece en el directorio de 2025.</b> '
+        + (n ? 'Corresponde a ' + esc(nom) + ', donde hay ' + n + ' establecimientos. ' : '')
+        + 'Puede ser el código de una sede (use el de la sede principal), un error al digitarlo o una institución creada después de 2025. '
+        + 'Si está seguro del número, escriba abajo el nombre y el municipio.</div>';
+      $('#manual').hidden = false; encontrado = {dane: v, verificado: false};
+    }
+  }
+  $('#dane').addEventListener('input', revisar);
+  $('#dane').addEventListener('focus', () => { cargarDUE().catch(()=>{}); }, {once:true});
+
+  function numeroPedido(dane){
+    const d = new Date(), p = n => String(n).padStart(2,'0');
+    return 'P-' + d.getFullYear() + p(d.getMonth()+1) + p(d.getDate()) + '-' + p(d.getHours()) + p(d.getMinutes()) + '-' + dane.slice(-4);
+  }
+
+  $('#form-pedido').addEventListener('submit', async ev => {
+    ev.preventDefault();
+    const err = $('#form-error'); err.hidden = true;
+    const falta = [];
+    if (!encontrado) falta.push('un código DANE de 12 dígitos');
+    else if (encontrado.verificado && !($('#confirma_ie') && $('#confirma_ie').checked)) falta.push('confirmar que la institución encontrada es la suya');
+    else if (!encontrado.verificado && !$('#manual').hidden && !$('#nombre_manual').value.trim()) falta.push('el nombre de la institución');
+    if (!$('#rector').value.trim()) falta.push('su nombre');
+    if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test($('#correo').value.trim())) falta.push('un correo válido');
+    if ($('#celular').value.replace(/\D/g,'').length < 7) falta.push('su celular');
+    if (!$('#acepto_terminos').checked) falta.push('aceptar los términos');
+    if (!$('#acepto_datos').checked) falta.push('autorizar el tratamiento de datos');
+    if (falta.length){ err.textContent = 'Falta: ' + falta.join(', ') + '.'; err.hidden = false; return; }
+
+    const kit = document.querySelector('input[name=kit]:checked').value;
+    const pago = document.querySelector('input[name=pago]:checked').value;
+    const pedido = numeroPedido(encontrado.dane);
+    const datos = {
+      pedido, fecha: new Date().toISOString(), kit, pago,
+      dane: encontrado.dane, verificado_web: encontrado.verificado ? 'sí' : 'no',
+      institucion: encontrado.nombre || $('#nombre_manual').value.trim(),
+      municipio: encontrado.municipio || $('#municipio_manual').value.trim(),
+      departamento: encontrado.departamento || '', secretaria: encontrado.secretaria || '',
+      sector: encontrado.sector || '', calendario: encontrado.calendario || '',
+      rector: $('#rector').value.trim(), cargo: $('#cargo').value, correo: $('#correo').value.trim(),
+      celular: $('#celular').value.trim(), notas: $('#notas').value.trim(),
+      acepta_terminos: 'sí', autoriza_datos: 'sí'
+    };
+    const btn = $('#btn-enviar'); btn.disabled = true; btn.textContent = 'Enviando…';
+    let enviado = false;
+    if (EKUNAI.urlPedidos){
+      try {
+        await fetch(EKUNAI.urlPedidos, {method:'POST', mode:'no-cors', body: new URLSearchParams(datos)});
+        enviado = true;
+      } catch(e) {}
+    }
+    $('#form-pedido').hidden = true; $('#confirmacion').hidden = false;
+    $('#num-pedido').textContent = pedido;
+    if (pago === 'Pago en línea' && EKUNAI.enlacePago){ $('#pagar-ahora').hidden = false; $('#btn-pagar').href = EKUNAI.enlacePago; }
+    if (enviado){
+      $('#msg-correo').textContent = 'Le escribiremos a ' + datos.correo + ' en un día hábil. Si no ve el correo, revise la carpeta de spam.';
+    } else {
+      const cuerpo = Object.entries(datos).map(([k,v]) => k + ': ' + v).join('\n');
+      const mail = 'mailto:' + EKUNAI.correoContacto + '?subject=' + encodeURIComponent('Solicitud de licencia EKUNAI Rector ' + pedido) + '&body=' + encodeURIComponent(cuerpo);
+      $('#msg-correo').innerHTML = 'Para terminar, envíenos estos datos por correo: <a href="' + mail + '">abrir el correo ya escrito</a>.';
+      window.location.href = mail;
+    }
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+})();
+</script>
+</body>
+</html>
