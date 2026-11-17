@@ -7,7 +7,7 @@ window.EKUNAI = {
   enlacePago: "",
   // URL de la aplicación web de Google Apps Script que guarda los pedidos en la hoja «Pedidos EKUNAI Rector».
   // Vacío = el formulario abre un correo ya escrito para enviarlo a mano.
-  urlPedidos: "",
+  urlPedidos: "https://script.google.com/macros/s/AKfycbzbPyrjkMYKiJ0VKXY-90vJlDKt4dmRPZnQqgvt17Cn5XK-VGDRwtPo4uMj9Tc-epDLYw/exec",
   // Correo de ventas y de soporte.
   correoContacto: "papajosemental@gmail.com",
   correoSoporte: "papajosemental@gmail.com",
