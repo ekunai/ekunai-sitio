@@ -9,8 +9,8 @@ window.EKUNAI = {
   // Vacío = el formulario abre un correo ya escrito para enviarlo a mano.
   urlPedidos: "https://script.google.com/macros/s/AKfycbzbPyrjkMYKiJ0VKXY-90vJlDKt4dmRPZnQqgvt17Cn5XK-VGDRwtPo4uMj9Tc-epDLYw/exec",
   // Correo de ventas y de soporte.
-  correoContacto: "papajosemental@gmail.com",
-  correoSoporte: "papajosemental@gmail.com",
+  correoContacto: "ekunai.info@gmail.com",
+  correoSoporte: "ekunai.info@gmail.com",
   // Versión vigente de EKUNAI Rector (la que se muestra en Actualizaciones).
   version: "0.5.1",
   fechaVersion: "17 de noviembre de 2026"
